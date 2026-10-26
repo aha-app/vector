@@ -19,6 +19,8 @@ pub mod http;
 pub(crate) mod http_v1;
 pub mod metadata;
 pub mod normalizer;
+#[cfg(feature = "codecs-parquet")]
+pub mod parquet_batcher;
 pub mod partitioner;
 pub mod path_confinement;
 pub mod processed_event;
